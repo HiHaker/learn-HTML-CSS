@@ -126,3 +126,87 @@ strong标签也是一个行内元素，表示对内容的强调。
 ##### br标签
 
 表示换行。
+
+------
+
+#### H5新增的一些标签和div标签与span标签
+
+新增了如下的一些标签，但主要还是使用div和span标签来开发。
+
+```html
+<header></header>
+<main></main>
+<footer></footer>
+<nav></nav>
+<section></section>
+
+<div>
+        <span></span>
+</div>
+```
+
+#### 列表标签
+
+ul无序列表（使用最多），ol有序列表（使用最少），dl定义列表,列表之间可以互相嵌套。
+
+```html
+<ul>
+    <li>香蕉</li>
+    <li>苹果</li>
+    <li>梨</li>
+</ul>
+
+<ol>
+    <li>第一</li>
+    <li>第二</li>
+</ol>
+
+<dl>
+    <dt>结构</dt>
+    <dd>hello</dd>
+</dl>
+```
+
+#### 超链接标签
+
+a标签，可以链接到外部地址或内部地址。
+
+通过给页面内的元素指定元素唯一的id也可以超链接到指定的元素位置，去顶部，去底部等等。
+
+```html
+<a href="#bottom">去底部</a>
+<a href="#p3">去p3</a>
+```
+
+#### 图片标签
+
+使用img标签来引入外部图片，img标签是一个自结束标签，属于替换元素，介于块元素和行内元素之间。
+
+img标签有一些属性：`src`图片的地址 `alt`图片的描述 `width`宽 `height`高，在PC端一般不去修改图片的宽度和高度，移动端会去。
+
+```html
+<img src="../images/pic1.png" alt="Van Gogh">
+```
+
+#### 内联框架
+
+和img很像的一个标签-iframe标签，用于向网页中引入其他的网页。
+
+```html
+<iframe src="https://www.baidu.com" frameborder="0"></iframe>
+```
+
+#### 音频标签audio
+
+属性有`src`文件地址 `controls`是否显示控制条。
+
+```html
+<audio src="xxx.mp3" controls></audio>
+<audio controls>
+    <source src="xxx.mp3">
+</audio>
+```
+
+#### 视频标签
+
+使用video视频标签来向网页中引入一个视频，用法和audio标签类似。
