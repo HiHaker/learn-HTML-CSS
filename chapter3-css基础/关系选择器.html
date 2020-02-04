@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>关系选择器</title>
+    <style>
+        /* 子元素选择器 */
+        div > span{
+            color: red;
+        }
+
+        /* 多层子元素 */
+        div > p > span{
+            font-style: italic;
+        }
+
+        /* 后代元素选择器 */
+        div span{
+            font-size: 20px;
+        }
+
+        /* 兄弟元素选择器 */
+        p + span{
+            color: blue;
+        }
+
+        p ~ span{
+            color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            div里的p元素
+            <br>
+            <span>div里的p里的span元素</span>
+        </p>
+        <span>div里的span元素</span>
+        <br>
+        <span>div里的第二个span</span>
+    </div>
+</body>
+</html>
