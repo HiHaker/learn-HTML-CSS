@@ -161,3 +161,109 @@ p ~ span{
 }      
 ```
 
+##### 属性选择器
+
+属性选择器可以让我们根据标签的属性来选择元素：
+
+```css
+/* 第一种用法：[属性名] */
+p[title]{
+	color: orange;
+}
+
+/* 第二种用法：[属性名]=属性值 */
+p[title="abc"]{
+	font-size: 20px;
+}
+
+/* 第二种用法扩展：[属性名]^=属性值(以属性值开头) */
+p[title^="abc"]{
+	color: purple;
+}
+
+/* 第二种用法扩展：[属性名]$=属性值(以属性值结尾) */
+p[title$="o"]{
+	font-size: 20px;
+}
+
+/* 第二种用法扩展：[属性名]*=属性值(以属性值结尾) */
+p[title*="e"]{
+	color: green;
+}
+```
+
+##### 伪类选择器
+
+什么是伪类呢？伪类从字面意思上去理解，伪类就是一个不存在的类，一个特殊的类，表示标签的特殊状态，比如：第一个子元素、被点击的元素，、鼠标移入的元素，伪类一般情况下使用`:`开头。
+
+```css
+/* 伪类选择器 */
+/* :first-child子元素的第一个 */
+ul > li:first-child{
+	font-size: 20px;
+}
+
+/* :first-of-type指定元素的第一个 */
+ul > li:first-of-type{
+	color: red;
+}
+
+/* :last-child */
+ul > li:last-child{
+	color: blue;
+}
+
+/* :last-of-type */
+ul > li:last-of-type{
+	font-size: 20px;
+}
+
+/* :nth-child() */
+ul > li:nth-child(2n){
+	color: orange;
+}
+```
+
+附html代码：
+
+```html
+<body>
+    <ul>
+        <span>这是span</span>
+        <li>第一</li>
+        <li>第二</li>
+        <li>第三</li>
+        <li>第四</li>
+        <li>第五</li>
+    </ul>
+</body>
+```
+
+###### 超链接的伪类
+
+超链接也有一些特殊的状态：是否被访问过、是否被点击中，所以也有如下的一些伪类：
+
+```css
+<style>
+	/* 正常的链接 */
+	a:link{
+		color: green;
+	}
+
+	/* 访问过的链接(因为隐私的原因，这里样式只能更改颜色) */
+	a:visited{
+		color: orange;
+	}
+
+	/* 鼠标移动到 */
+	a:hover{
+		color: red;
+	}
+
+	/* 鼠标点击 */
+	a:active{
+		font-size: 20px;
+	}
+</style>
+```
+

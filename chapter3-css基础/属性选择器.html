@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /* 第一种用法：[属性名] */
+        p[title]{
+            color: orange;
+        }
+
+        /* 第二种用法：[属性名]=属性值 */
+        p[title="abc"]{
+            font-size: 20px;
+        }
+
+        /* 第二种用法扩展：[属性名]^=属性值(以属性值开头) */
+        p[title^="abc"]{
+            color: purple;
+        }
+
+        /* 第二种用法扩展：[属性名]$=属性值(以属性值结尾) */
+        p[title$="o"]{
+            font-size: 20px;
+        }
+
+        /* 第二种用法扩展：[属性名]*=属性值(以属性值结尾) */
+        p[title*="e"]{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p title="abc">落霞与孤鹜齐飞</p>
+    <p title="abcdef">秋水共长天一色</p>
+    <p title="hello">少小离家老大回</p>
+    <p>乡音无改鬓毛衰</p>
+    <p>儿童相见不相识</p>
+    <p>笑问客从何处来</p>
+</body>
+</html>

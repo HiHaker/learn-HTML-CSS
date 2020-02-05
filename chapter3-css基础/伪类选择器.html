@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        /* 伪类选择器 */
+        /* :first-child子元素的第一个 */
+        ul > li:first-child{
+            font-size: 20px;
+        }
+
+        /* :first-of-type指定元素的第一个 */
+        ul > li:first-of-type{
+            color: red;
+        }
+
+        /* :last-child */
+        ul > li:last-child{
+            color: blue;
+        }
+
+        /* :last-of-type */
+        ul > li:last-of-type{
+            font-size: 20px;
+        }
+
+        /* :nth-child() */
+        ul > li:nth-child(2n){
+            color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <span>这是span</span>
+        <li>第一</li>
+        <li>第二</li>
+        <li>第三</li>
+        <li>第四</li>
+        <li>第五</li>
+    </ul>
+</body>
+</html>

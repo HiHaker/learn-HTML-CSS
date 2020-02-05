@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接的伪类</title>
+    <style>
+        /* 正常的链接 */
+        a:link{
+            color: green;
+        }
+
+        /* 访问过的链接(因为隐私的原因，这里样式只能更改颜色) */
+        a:visited{
+            color: orange;
+        }
+
+        /* 鼠标移动到 */
+        a:hover{
+            color: red;
+        }
+
+        /* 鼠标点击 */
+        a:active{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">百度</a>
+    <a href="https://www.baidu123.com">百度</a>
+</body>
+</html>
