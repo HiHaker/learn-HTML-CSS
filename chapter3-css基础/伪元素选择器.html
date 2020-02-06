@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        /* 首字母 */
+        div::first-letter{
+            font-size: 50px;
+        }
+
+        /* 第一行 */
+        div::first-line{
+            background-color: greenyellow;
+        }
+
+        /* 选中 */
+        div::selection{
+            background-color: aqua;
+        }
+
+        /* 之前 */
+        div::before{
+            content: "Hahaha";
+        }
+
+        /* 之后 */
+        div::after{
+            content: "Hehehe";
+        }
+
+    </style>
+</head>
+<body>
+    <div> Lorem ips  um dolor sit amet consectetur, adipisicing elit. Unde accusantium, perspiciatis tenetur sint ullam ea, nostrum recusandae sunt cupiditate dignissimos ut dolorum perferendis a ratione quis dolorem ducimus veniam voluptates.</div>
+</body>
+</html>
