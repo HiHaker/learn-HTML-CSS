@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型4水平布局</title>
+    <style>
+        .box{
+            width: 800px;
+            height: 800px;
+            background-color: aqua;
+
+            border: 10px red solid;
+
+            padding: 10px 10px 10px 10px;
+
+            overflow: visible;
+        }
+
+        .inner{
+            width: 90%;
+            height: 900px;
+            background-color: blue;
+            border: 10px red solid;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>

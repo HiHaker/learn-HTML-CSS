@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型-边框</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            
+            /* 当border-width为4个值：上右下左 */
+            border-width: 10px 20px 30px 40px;
+            
+            /* 当border-width为3个值：上左右下 */
+            border-width: 10px 20px 10px;
+
+            /* 当border-width为两个值：上下 左右 */
+            border-width: 20px 40px;
+
+            /* 当border-width为一个值：上下左右 */
+            border-width: 10px;
+            border-color: red;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
