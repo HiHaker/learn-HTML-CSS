@@ -3,38 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>网易新闻列表</title>
+    <link rel="stylesheet" href="../reset.css">
     <style>
-        img{
-            width: 400px;
+        body{
+            background-color: antiquewhite;
+        }
+
+        .news-block{
+            width: 300px;
+            height: 340px;
+            border-top: 1px solid #DADCE0;
+            background-color: white;
+            /* 方便观察 */
+            margin: 50px auto;
+        }
+
+        .news-title{
+            width: auto;
+            height: 40px;
+            line-height: 40px;
+            
+            display: inline-block;
+            border-top: 1px solid red;
         }
 
         a{
-            font-size: 20px;
+            text-decoration: none;
         }
 
-        a:link{
-            color: gray;
+        .news-title > a{
+            color: #404040;
+            font-weight: bold;
         }
+
+        .news-img{
+            height: 150px;
+        }
+
+        .news-img > img{
+            height: 100%;
+        }
+
+        .img-text{
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: -30px;
+            /* padding-left: 25px; */
+        }
+
+        .img-text > a{
+            color: #FFFFFF;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .news-list{
+            width: 100%;
+            height: 100%;
+        }
+
+        .news-list > .news-item{
+            margin: 10px;
+        }
+
+        .news-list > .news-item > a{
+            font-size: 16px;
+            color: #666666;
+        }
+
+        .news-list > .news-item > a:hover{
+            color: red;
+        }
+
+        
     </style>
 </head>
 <body>
-    <div>
-        <img src="./images/网易新闻列表练习素材1.jpg" alt="新闻图片" class="pic1">
+    <div class="news-block">
+        <h1 class="news-title">
+           <a href="xxx"> 军事</a>
+        </h1>
+        <div class="news-img">
+            <img src="./images/网易新闻列表练习素材1.jpg" alt="新闻素材">
+            <h2 class="img-text">
+                <a href="xxx">日本新型反舰导弹测试：一次挂4枚</a>
+            </h2>
+        </div>
+        <ul class="news-list">
+            <li class="news-item">
+                <a href="xxx">墨西哥新型护卫舰入役：外型相当帅气</a>
+            </li>
+            <li class="news-item">
+                <a href="xxx">空军发布歼十一轰6K挂弹飞行画面</a>
+            </li>
+            <li class="news-item">
+                <a href="xxx">国际航班骤减 专家：疫情影响不会持久</a>
+            </li>
+            <li class="news-item">
+                <a href="xxx">台湾：暂停出团大陆至4月底，连转机都不行</a>
+            </li>
+        </ul>
     </div>
-    <div>
-        <a href="xxx">墨西哥新型护卫舰入役</a>
-    </div>
-    <br>
-    <div>
-
-        <a href="xxx">空军发布歼十六轰6K挂弹飞行画面</a>
-    </div>
-    <br>
-    <div>
-
-        <a href="xxx">国际航班骤减 专家：疫情不会持久</a>
-    </div>
-    <br>
-    <div><a href="xxx">台湾：暂停出团大陆至4月底，连转机都不行</a></div>
 </body>
 </html>
