@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮廓阴影和圆角</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            /* 设置边框 */
+             border: 10px solid red;
+            /* 设置轮廓 */
+            outline: 10px solid red;
+            /* 设置阴影 */
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, .3);
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            /* 4个值，分别对左上 右上 右下 左下四个值进行设置 */
+            border-radius: 10px 20px 10px 20px;
+            /* 3个值，分别对左上 右上/左下 右下三个值进行设置 */
+            border-radius: 10px 20px 10px;
+            /* 两个值，分别对左上/右下 右上/左下两个值进行设置 */
+            border-radius: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2"></div>
+</body>
+</html>

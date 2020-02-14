@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>简单布局联系</title>
+    <style>
+        header, main, footer{
+            width: 1000px;
+            /* 设置居中 */
+            margin: 10px auto;
+        }
+
+        header{
+            /* 宽度和高度 */
+            height: 200px;
+            /* 背景颜色 */
+            background-color: gray;
+        }
+
+        main{
+            height: 400px;
+            background-color: aqua;
+            
+        }
+
+        footer{
+            height: 200px;
+            background-color: tomato;
+        }
+
+        .nav-left, article, .nav-right{
+            height: 100%;
+            /* 向左浮动 */
+            float: left;
+        }
+
+        .nav-left{
+            width: 200px;
+            background-color: #bfa;
+        }
+
+        article{
+            width: 580px;
+            background-color: red;
+            margin: 0px 10px;
+        }
+
+        .nav-right{
+            width: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部 -->
+    <header></header>
+    <!-- 主要内容 -->
+    <main>
+        <!-- 左侧导航条 -->
+        <nav class="nav-left"></nav>
+        <!-- 文章区 -->
+        <article></article>
+        <!-- 右侧导航条 -->
+        <nav class="nav-right"></nav>
+    </main>
+    <!-- 底部 -->
+    <footer></footer>
+</body>
+</html>

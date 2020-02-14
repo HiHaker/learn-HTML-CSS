@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>clearfix类</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            margin-top : 50px;
+        }
+
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>
