@@ -1,0 +1,23 @@
+{
+  "id": "1645030",
+  "name": "myproject",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13045022",
+      "name": "衬衣",
+      "font_class": "chenyi",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "13045023",
+      "name": "短裤",
+      "font_class": "duanku",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}

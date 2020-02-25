@@ -1,0 +1,25 @@
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+    /* 设置最小宽度，防止过小出现布局问题 */
+    min-width: 1226px;
+}
+
+.w{
+    /* 设置网站的主题内容区的宽度是1226px */
+    width: 1226px;
+    /* 设置水平居中的效果 */
+    margin: 0 auto;
+}

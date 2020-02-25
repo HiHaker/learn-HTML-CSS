@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>钟表</title>
+    <style>
+        .clock{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-image: url('../images/clock.jpg');
+            background-size: cover;
+            position: relative;
+        }
+
+        /* 设置居中 */
+        .second-wrapper,
+        .minute-wrapper,
+        .hour-wrapper{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            margin: auto;
+        }
+
+        .second-wrapper{
+            width: 80%;
+            height: 80%;
+            animation-name: clock;
+            animation-duration: 60s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* background-color: red; */
+        }
+
+        .second-wrapper .second{
+            width: 1px;
+            height: 50%;
+            background-color: black;
+            margin: 0px auto;
+        }
+
+        .minute-wrapper{
+            width: 70%;
+            height: 70%;
+            animation-name: clock;
+            animation-duration: 3600s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* background-color: red; */
+        }
+
+        .minute-wrapper .minute{
+            width: 2px;
+            height: 50%;
+            background-color: black;
+            margin: 0px auto;
+        }
+
+        .hour-wrapper{
+            width: 60%;
+            height: 60%;
+            animation-name: clock;
+            animation-duration: 43200s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            /* background-color: red; */
+        }
+
+        .hour-wrapper .hour{
+            width: 3px;
+            height: 50%;
+            background-color: black;
+            margin: 0px auto;
+        }
+
+        /* 设置时钟的关键帧 */
+        @keyframes clock{
+            from{
+                transform: rotateZ(0deg);
+            }
+
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="second-wrapper">
+            <div class="second"></div>
+        </div>
+
+        <div class="minute-wrapper">
+            <div class="minute"></div>
+        </div>
+
+        <div class="hour-wrapper">
+            <div class="hour"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>立方体</title>
+    <style>
+        html{
+            perspective: 800px;
+        }
+
+        .box{
+            width: 200px;
+            height: 200px;
+            margin: 200px auto;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: all 1s;
+            animation: rotate 5s infinite;
+        }
+
+        .box div{
+            top: 0px;
+            left: 0px;
+            position: absolute;
+        }
+
+        .face1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+
+        .face2{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            transform: rotateY(-90deg) translateZ(-100px);
+        }
+
+        .face3{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transform: rotateX(90deg) translateZ(-100px);
+        }
+
+        .face4{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .face5{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transform: translateZ(-100px);
+        }
+
+        .face6{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transform: translateZ(100px);
+        }
+
+        /* .box:hover{
+            transform: rotateX(45deg) rotateY(45deg);
+        } */
+
+        @keyframes rotate{
+            from{
+                transform: rotateX(0deg) rotateY(0deg);
+            }
+
+            to{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <!-- 前后 -->
+        <div class="face1"></div>
+        <div class="face2"></div>
+        <!-- 上下 -->
+        <div class="face3"></div>
+        <div class="face4"></div>
+        <!-- 前后 -->
+        <div class="face5"></div>
+        <div class="face6"></div>
+    </div>
+</body>
+</html>

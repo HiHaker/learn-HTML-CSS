@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <form action="./target.html">
+        文本框 <input type="text" name="text">
+        <br>
+        密码框 <input type="password" name="password">
+        <br>
+        提交按钮
+        <input type="submit" name="submitbutton">
+        <br>
+        按钮 <input type="button" name="button" value="点击">
+        <br>
+        单选框
+        <!-- 通过name值来对单选框进行分组，name值相同，分为一组 -->
+        <!-- 设置value值来表示选中了哪个框 -->
+        <input type="radio" name="box1" value="a">
+        <input type="radio" name="box1" value="b" checked>
+        <br>
+        多选框
+        <!-- 和单选框一样指定name和value -->
+        <input type="checkbox" name="box2" value="a" checked>
+        <input type="checkbox" name="box2" value="b">
+        <input type="checkbox" name="box2" value="c">
+        <br>
+        下拉列表
+        <select name="selectbox" id="sb">
+            <option value="a">hello</option>
+            <option value="b">你好</option>
+        </select>
+    </form>
+</body>
+</html>

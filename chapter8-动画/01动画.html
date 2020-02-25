@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: grey;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 指定要对当前元素生效的关键帧的名字 */
+            animation-name: myKeyframe;
+            /* 设置持续时间 */
+            animation-duration: 4s;
+            /* 动画的时延 */
+            animation-delay: 2s;
+            /* 动画的时序函数 */
+            animation-timing-function: ease;
+            /* 动画的执行的次数 */
+            animation-iteration-count: infinite;
+            /* 指定动画的运行方向 */
+            /* normal：正常，从from到to */
+            /* reverse：反向，从to到from */
+            /* alternate：先从from到to，再从to到from */
+            animation-direction: normal;
+            /* 动画的执行状态 */
+            /* running执行 */
+            /* paused暂停状态 */
+            animation-play-state: paused;
+            /* 动画填充模式 */
+            /* none回到原来的位置 */
+            /* forward回到to，结束的位置 */
+            /* backwards动画延时等待时，就会处于开始位置 */
+            /* both结合了forward和backward */
+            animation-fill-mode: none;
+        }
+
+        /* 设置一个关键帧 */
+        @keyframes myKeyframe{
+            /* 开始，相当于0% */
+            from{
+                margin-left: 0px;
+            }
+
+            /* 结束，相当于100% */
+            to{
+                margin-left: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

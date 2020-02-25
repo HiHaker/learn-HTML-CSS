@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东顶部导航条</title>
+    <link rel="stylesheet" href="../chapter6-字体和背景/fa/css/all.css">
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .top{
+            /* 设置整个顶部栏样式 */
+            width: 100%;
+            height: 39px;
+            /* 背景颜色 */
+            background-color: #E3E4E5;
+            /* 底部边框 */
+            border-bottom: 1px solid #DDDDDD;
+        }
+
+        .top-bar{
+            width: 1470px;
+            margin: 0px auto;
+        }
+
+        /* 解决高度塌陷 */
+        .clearfix::before,
+        .clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .top-bar-left{
+            float: left;
+        }
+
+        .location{
+            padding: 1px 10px;
+            position: relative;
+            border-bottom: 1px solid transparent;
+            z-index: 999;
+        }
+
+        .location i{
+            color: red;
+        }
+
+        .top-bar-left .city-list{
+            width: 320px;
+            height: 436px;
+            background-color: white;
+            /* 参数分别为水平偏移量，垂直偏移量，阴影的模糊半径 */
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+            border: 1px solid rgb(214, 214, 214);
+            position: absolute;
+            top: 39px;
+            /* 在未点击时进行隐藏 */
+            display: none;
+        }
+
+        .top-bar-left:hover>.city-list{
+            display: block;
+        }
+
+        .top-bar-left:hover>.location{
+            background-color: white;
+            border-bottom: 1px solid white;
+        }
+
+        .top-bar-right{
+            float: right;
+        }
+
+        .top-bar-right > div{
+            float: left;
+        }
+
+        .top-bar a,
+        .other{
+            color: #999999;
+            font-size: 13px;
+            text-decoration: none;
+            line-height: 39px;
+        }
+
+        .fa-angle-down{
+            color: #ccc;
+        }
+
+        .divide{
+            width: 1px;
+            height: 10px;
+            background-color: #CCC;
+            margin: 14.5px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top-bar clearfix">
+            <div class="top-bar-left">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="JavaScript:">云南</a>
+                </div>
+                <div class="city-list"></div>
+            </div>
+            <div class="top-bar-right">
+                <div>
+                    <a href="javascript:">你好，请登录</a>
+                    <a href="javascript:">免费注册</a>
+                </div>
+                <div class="divide"></div>
+                <div>
+                    <a href="javascript:">我的订单</a>
+                </div>
+                <div class="divide"></div>
+                <div>
+                    <a href="javascript:">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="divide"></div>
+                <div>
+                    <a href="javascript:">京东会员</a>
+                </div>
+                <div class="divide"></div>
+                <div>
+                    <a href="javascript:">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="divide"></div>
+                <div class="other">
+                    客户服务
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="divide"></div>
+                <div class="other">
+                    网站导航
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="divide"></div>
+                <div class="other">手机京东</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

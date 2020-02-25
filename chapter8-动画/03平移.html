@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变形</title>
+    <style>
+        body{
+            background-color: silver;
+        }
+
+        span{
+            background-color: orange;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            margin: 200px;
+            transform: translateY(-100px);
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            transition: all .8s;
+        }
+
+        .box2:hover{
+            transform: translateY(-5px);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+        }
+    </style>
+</head>
+<body>
+    <!-- <span>今天天气真不错!</span>
+
+    <div class="box1"></div> -->
+
+    <div class="box2"></div>
+</body>
+</html>
