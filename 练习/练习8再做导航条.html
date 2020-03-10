@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex实现导航条</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .nav{
+            width: 1210px;
+            height: 48px;
+            line-height: 48px;
+            margin: 50px auto;
+            background-color: #E8E7E3;
+            /* 变为弹性容器 */
+            display: flex;
+            
+        }
+
+        .nav li{
+            flex-grow: 1;
+        }
+
+        .nav a{
+            display: block;
+            text-align: center;
+            font-size: 16px;
+            color: #777777;
+            text-decoration: none;
+        }
+
+        .nav a:hover{
+            background-color: #3F3F3F;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="javascript:;">HTML/CSS</a>
+        </li>
+        <li>
+            <a href="javascript:;">Browser Side</a>
+        </li>
+        <li>
+            <a href="javascript:;">SERVER SIDE</a>
+        </li>
+        <li>
+            <a href="javascript:;">Progamming</a>
+        </li>
+        <li>
+            <a href="javascript:;">XML</a>
+        </li>
+        <li>
+            <a href="javascript:;">Web Building</a>
+        </li>
+        <li>
+            <a href="javascript:;">Reference</a>
+        </li>
+    </ul>
+</body>
+</html>

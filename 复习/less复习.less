@@ -1,0 +1,57 @@
+.box{
+    width: 100px;
+    height: 100px;
+    .box2{
+        width: 50px;
+        height: 50px;
+        .box3{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+
+// 变量-直接使用
+@h: 100px;
+.box4{
+    width: @h;
+    height: @h;
+}
+
+@name: abc;
+@path: '../images';
+// 变量（作为类名使用或部分值使用）
+.@{name}{
+    width: 50px;
+    height: 50px;
+    background-image: url("@{path}");
+}
+
+.box5{
+    color: red;
+    // $引用已经指定值的对应的属性值
+    background-color: $color;
+}
+
+// &符号表示父元素
+.box6{
+    color: white;
+
+    &:hover{
+        color: black;
+    }
+}
+
+// 混合函数
+.p(@w, @h, @c){
+    width: @w;
+    height: @h;
+    color: @c;
+}
+
+.p4{
+    .p(100px, 100px, red);
+}
+
+// 可以通过@import导入其他less文件
+// @import "other.less"
