@@ -143,7 +143,7 @@ div > p > span{
 ###### 后代元素选择器
 
 ```css
-p ~ span{
+p  span{
 	color: lightblue;
 }
 ```
@@ -186,7 +186,7 @@ p[title$="o"]{
 	font-size: 20px;
 }
 
-/* 第二种用法扩展：[属性名]*=属性值(以属性值结尾) */
+/* 第二种用法扩展：[属性名]*=属性值(包含属性值) */
 p[title*="e"]{
 	color: green;
 }
